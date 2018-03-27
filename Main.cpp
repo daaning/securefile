@@ -4,7 +4,15 @@
 #include<fstream>
 #include<cstdlib>
 #include"Main.h"
+
+
+#ifdef __unix__
 #include"getch.cpp"
+#else
+#include<conio.h>
+#endif
+
+
 
 using namespace std;
 /* C++ file de/encryptor uses very simple algoritm as standard edit and choose from included crypto++ database
